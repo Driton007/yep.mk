@@ -1,22 +1,21 @@
-
 <div class="sticky top-0 bg-white z-10">
-<header class="container">
-    <div class="flex flex-wrap items-center justify-around">
+    <header class="container">
+        <div class="flex flex-wrap items-center justify-around">
 
-        <img class="w-24"
+            <img class="w-24"
             src="https://media-exp1.licdn.com/dms/image/C560BAQHhCs45-4vKeg/company-logo_200_200/0/1568107224621?e=2159024400&v=beta&t=_jQYQRnvZlzt3NznD78s4Miw_tus0fGavkPaALJHBE0"
             alt="">
 
-      <div class="">
-            <a class="text-center uppercase py-4 border-purple-100 border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 last:mr-0 border-yellow-500" href="/">Home</a>
+            <div class="">
+                <a class="text-center uppercase py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 last:mr-0 {% if '/about' in page.url %}border-yellow-500 {% endif %}" href="/">Home</a>
 
-            <a class="text-center uppercase py-4 border-purple-100 border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 last:mr-0 border-yellow-500" href="/about/">About Us</a>
+                <a class="text-center uppercase py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 last:mr-0 {% if '/about' in page.url %}border-yellow-500 {% endif %}" href="/about">About Us</a>
 
-            <a class="text-center uppercase py-4 border-purple-100 border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 last:mr-0 border-yellow-500" href="/project/">Projects</a>
+                <a class="text-center uppercase py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 last:mr-0 {% if '/project' in page.url %}border-yellow-500 {% endif %}" href="/project">Projects</a>
 
-            <a class="text-center uppercase py-4 border-purple-100 border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 last:mr-0 border-yellow-500" href="/contact/">Contact</a>
-                            
+                <a class="text-center uppercase py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 last:mr-0 {% if '/contact' in page.url %}border-yellow-500 {% endif %}" href="/contact">Contact</a>
+
+            </div>
         </div>
-    </div>
     </div>
 </header>

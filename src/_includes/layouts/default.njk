@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ site.title }} - {{ site.description | safe }}</title>
+        <meta name="title" content="{{ site.title }} - {{ site.description | safe }}">
+        <meta name="description" content="{{ site.description | safe }}">
+        {%- for keyword in site.keywords -%}
+            <meta name="keywords" content="{{ keyword }}{%- if not loop.last %},{% endif -%}">
+        {%- endfor -%}
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicon/site.webmanifest">
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo:500,700&display=swap">
+        <link rel="stylesheet" href="/assets/css/main.css">
+    </head>
+
+    <body class="font-sans antialiased">
+
+        {# Header #}
+        {% include "partials/header.njk" %}
+
+        {# Content #}
+        {{ content | safe }}
+
+        {# Footer #}
+        {% include "partials/footer.njk" %}
+
+        <script type="module" src="/assets/js/main.js"></script>
+    </body>
+</html>

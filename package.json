@@ -1,0 +1,24 @@
+{
+  "name": "tailwindpages",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "npm run clean && cross-env NODE_ENV=development npx @11ty/eleventy --serve --config eleventy.config.js",
+    "build": "npm run clean && cross-env NODE_ENV=production npx @11ty/eleventy --config eleventy.config.js",
+    "debug": "DEBUG=Eleventy* npm run build"
+  },
+  "author": "Lucky Media",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "cross-env": "^7.0.3",
+    "eleventy-plugin-tailwindcss": "^0.3.0",
+    "rimraf": "^3.0.2",
+    "tailwind-bootstrap-grid": "^3.3.0"
+  },
+  "dependencies": {
+    "@openfonts/archivo-narrow_all": "^1.44.2",
+    "alpinejs": "^2.8.0"
+  }
+}

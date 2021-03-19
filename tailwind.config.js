@@ -3,8 +3,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      
       fontFamily: {
         'sans': 'Archivo, -apple-system, BlinkMacSystemFont',
+      },
+      colors:{
+        transparent: 'transparent',
+        current: 'currentColor',
+        'primary':'#372b7d'
+        
       },
     },
   },

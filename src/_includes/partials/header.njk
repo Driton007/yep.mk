@@ -1,27 +1,23 @@
 <div class="sticky top-0 bg-white z-10">
-    <header class="container">
-        <div class="flex flex-wrap items-center justify-between ">
-        <a href="/">
-            <div class="">
-                <img class="w-28 py-2"
-                src="/assets/img/logo.png"
-                alt=""> 
-            </div>
-                <div class="">
-                    <a class="text-center py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 
-                    {% if '/' in page.url %}border-yellow-500 {% endif %}" href="/">Home</a>
-
-                    <a class="text-center py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 
-                    {% if '/about' in page.url %}border-yellow-500 {% endif %}" href="/about">About Us</a>
-
-                    <a class="text-center py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 
-                    {% if '/project' in page.url %}border-yellow-500 {% endif %}" href="/project">Projects</a>
-
-                    <a class="text-center py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 
-                    {% if '/contact' in page.url %}border-yellow-500 {% endif %}" href="/contact">Contact</a>
-
-                </div>
-            </a>
+  <header class="container">
+    <div class="row items-center justify-around ">
+      <a href="/">
+        <div class="">
+          <img class="w-28 py-2" src="/assets/img/logo.png" alt="">
         </div>
+        <div class="space-x-5 ">
+          <a class="text-center py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8" href="/">Home</a>
+
+          <a class="text-center py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 {% if '/about' in page.url %}border-yellow-500 {% endif %}" href="/about">About Us</a>
+
+          <a class="text-center py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 {% if '/project' in page.url %}border-yellow-500 {% endif %}" href="/project">Projects</a>
+
+          <a class="text-center py-4 border-transparent border-b md:border-b-2 md:hover:border-yellow-500 md:mr-8 {% if '/contact' in page.url %}border-yellow-500 {% endif %}" href="/contact">Contact</a>
+
+        </div>
+      </a>
     </div>
+</div>
+
+
 </header>

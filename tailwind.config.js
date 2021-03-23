@@ -11,12 +11,14 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         'primary':'#372b7d'
-        
       },
+      
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      ringWidth: ['hover', 'active'],
+    },
   },
   plugins: [
     require("tailwind-bootstrap-grid")({
